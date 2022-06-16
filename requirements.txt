@@ -1,3 +1,4 @@
 boto3
 botocore
-hdfs
+hdfs[avro,dataframe,kerberos]
+minio
