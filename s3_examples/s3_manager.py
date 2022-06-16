@@ -69,6 +69,11 @@ def upload_file(file_name, bucket, object_name=None):
     return True
 
 
+def download_file(file_name, bucket, object_name=None):
+    s3_client = boto3.client('s3')
+    s3_client.download_file(bucket, object_name, file_name)
+
+
 class ProgressPercentage(object):
 
     def __init__(self, filename):
