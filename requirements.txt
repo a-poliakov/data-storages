@@ -1,5 +1,7 @@
+pandas
 boto3
 botocore
+hdfs3
 hdfs[avro,dataframe,kerberos]
 minio
 pymongo

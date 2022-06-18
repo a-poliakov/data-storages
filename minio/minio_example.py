@@ -9,9 +9,9 @@ minioClient = Minio('127.0.0.1:9000',
 minioClient.make_bucket('example')
 
 # open the file and put the object in bucket called example
-with open('test.txt', 'rb') as file_data:
-    file_stat = os.stat('test.txt')
-    minioClient.put_object('example', 'test.txt', file_data,
+with open('file.txt', 'rb') as file_data:
+    file_stat = os.stat('file.txt')
+    minioClient.put_object('example', 'file.txt', file_data,
                            file_stat.st_size)
 
 # List all object paths in bucket that begin with my-prefixname.
