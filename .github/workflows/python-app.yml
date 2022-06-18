@@ -26,6 +26,7 @@ jobs:
     - name: Install dependencies
       run: |
         sudo apt-get install libpcap-dev libpq-dev
+        sudo apt-get install krb5-config krb5-user python-pip python3-pip libkrb5-dev
         python -m pip install --upgrade pip
         pip install --upgrade setuptools
         pip install flake8 pytest
